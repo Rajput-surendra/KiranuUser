@@ -43,12 +43,12 @@ class _SplashScreen extends State<Splash> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: back(),
+              decoration: back(),
             child: Center(
               child: Image.asset(
                 'assets/images/splashlogo.png',
-                width: 250,
-                height: 250,
+                width: 400,
+                height: 400,
               ),
             ),
           ),

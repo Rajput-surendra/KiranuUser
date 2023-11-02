@@ -242,7 +242,7 @@
   "GUEST" : "Hola, Invitado ",
   "PAYPAL_LBL" : "PayPal ",
   "PAYUMONEY_LBL" : "PayUMoney ",
-  "RAZORPAY_LBL" : "RazorPay ",
+  "RAZORPAY_LBL" : "Online RazorPay ",
   "PAYSTACK_LBL" : "Paystack ",
   "FLUTTERWAVE_LBL" : "Flutwave ",
   "STRIPE_LBL" : "Raya ",

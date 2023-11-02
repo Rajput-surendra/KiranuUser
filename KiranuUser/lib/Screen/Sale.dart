@@ -78,7 +78,8 @@ class _SaleState extends State<Sale>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _isNetworkAvail
+        body:
+        _isNetworkAvail
             ? RefreshIndicator(
                 color: colors.primary,
                 key: _refreshIndicatorKey,
@@ -87,22 +88,22 @@ class _SaleState extends State<Sale>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          getTranslated(context, 'CHOOSE_DIS')!,
-                          style: TextStyle(
-                            color: Theme.of(context).colorScheme.fontColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
+                      // Padding(
+                      //   padding: const EdgeInsets.all(8.0),
+                      //   child: Text(
+                      //     getTranslated(context, 'CHOOSE_DIS')!,
+                      //     style: TextStyle(
+                      //       color: Theme.of(context).colorScheme.fontColor,
+                      //       fontWeight: FontWeight.bold,
+                      //       fontSize: 16,
+                      //     ),
+                      //   ),
+                      // ),
                       discountRow(),
                       // _catList(),
                       // _slider(),
-                      _product(),
-                      _section(),
+                     _product(),
+                    _section(),
                     ],
                   ),
                 ))
@@ -127,8 +128,8 @@ class _SaleState extends State<Sale>
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    _getHeading(saleList[index].title ?? "", index),
-                    _getSection(index),
+                   _getHeading(saleList[index].title ?? "", index),
+                   _getSection(index),
                   ],
                 ),
               ),

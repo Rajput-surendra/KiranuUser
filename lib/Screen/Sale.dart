@@ -296,6 +296,7 @@ class _SaleState extends State<Sale>
                   ],
                 ),
               ),
+
               Text(" " + CUR_CURRENCY! + " " + price.toString(),
                   style: TextStyle(
                       color: Theme.of(context).colorScheme.fontColor,
@@ -422,6 +423,13 @@ class _SaleState extends State<Sale>
                     ),
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("${saleList[secPos].productList![index].name!}",
+                    style: TextStyle(
+                        color: Theme.of(context).colorScheme.fontColor,
+                        fontWeight: FontWeight.bold,fontSize: 12,overflow: TextOverflow.ellipsis,)),
               ),
               Text(" " + CUR_CURRENCY! + " " + price.toString(),
                   style: TextStyle(

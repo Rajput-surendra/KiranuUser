@@ -258,7 +258,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
           : Text(
               title!,
               style: TextStyle(
-                  color: colors.primary, fontWeight: FontWeight.normal),
+                  color: colors.whiteTemp, fontWeight: FontWeight.normal),
             ),
 
       leading: _selBottom == 0
@@ -267,7 +267,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
                   child: SvgPicture.asset(
                 imagePath + "search.svg",
                 height: 20,
-                color: colors.primary,
+                color: colors.whiteTemp,
               )),
               onTap: () {
                 Navigator.push(
@@ -287,7 +287,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
                 icon: SvgPicture.asset(
                   imagePath + "search.svg",
                   height: 20,
-                  color: colors.primary,
+                  color: colors.whiteTemp,
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -299,7 +299,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
         IconButton(
           icon: SvgPicture.asset(
             imagePath + "desel_notification.svg",
-            color: colors.primary,
+            color: colors.whiteTemp,
           ),
           onPressed: () {
             CUR_USERID != null
@@ -319,7 +319,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
           padding: EdgeInsets.all(0),
           icon: SvgPicture.asset(
             imagePath + "desel_fav.svg",
-            color: colors.primary,
+            color: colors.whiteTemp,
           ),
           onPressed: () {
             CUR_USERID != null
@@ -336,7 +336,8 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
           },
         ),
       ],
-      backgroundColor: Theme.of(context).colorScheme.white,
+      //backgroundColor: Theme.of(context).colorScheme.fontColor,
+    backgroundColor: colors.primary
     );
   }
 
